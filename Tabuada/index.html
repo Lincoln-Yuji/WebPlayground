@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,34 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" defer></script>
 </head>
+
 <body>
-    <h1>Testando...</h1>
+    <h2>Type the number to generate the multiplication table</h2>
+
+    <form id="multiplication-form">
+        <div class="form-control">
+            <label for="number">Number:</label>
+            <input type="number" name="number" id="number" placeholder="Ex: 3">
+        </div>
+        <div class="form-control">
+            <label for="multiplicador">Multiplication range:</label>
+            <input type="number" name="multiplicador" id="multiplicador" placeholder="From 1 to 20" min="1" max="20">
+        </div>
+        <input id="calculate" type="submit" value="Calculate">
+    </form>
+
+    <div id="multiplication-table">
+        <h2>Table of <span></span> from 1 to <span></span></h2>
+        <div id="multiplication-operations">
+            <p>Give me a number to generate the table...</p>
+            <div class="row">
+                <div class="operation">5 x 1 =</div>
+                <div class="result">5</div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
